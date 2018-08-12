@@ -1,0 +1,28 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+struct Array{
+  vector <int> v;
+};
+int main() {
+    int arnum,arsize,i,qnum,j,ii,jj;
+    cin>>arnum>>qnum;
+    struct Array array[arnum];
+       for(i=0;i<arnum;i++)
+       {
+         cin>>arsize;
+           for(j=0;j<arsize;j++)
+           {
+             cin>>ii;
+               array[i].v.push_back(ii);
+           }
+       }
+    for(i=0;i<qnum;i++)
+    {
+       cin>>ii>>jj;
+        cout<<array[ii].v.at(jj);//
+        cout<<"\n";
+        }} 
